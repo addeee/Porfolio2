@@ -54,11 +54,14 @@
 <image class="mySlides" src="https://user-images.githubusercontent.com/29642651/28042771-b6934b7a-659c-11e7-95f8-ab871ff28890.PNG">
 <button class="w3-buttonw3-display-left" onlick="plusDivs(-1)>&#10094;</button>
 <button class="w3-buttonw3-display-right" onlick="plusDivs(-1)>&#10095;</button>       
+<script>
 var slideIndex=1;
 showDivs(slideIndex);
+
 function plusDivs(n){
   showDivs(slideIndex+=n);
   }
+  
 function showDivs(n){
   var i;
   var x=document.getElementsByClassName("mySlides");
@@ -69,6 +72,7 @@ function showDivs(n){
   }
   x[slideIndex-1].style.display="block";
   }
+  </script>
 <h1>Adilene Tejeda</h1>
 <h2>Bio:</h2>
   <body>
