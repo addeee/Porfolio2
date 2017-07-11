@@ -52,8 +52,23 @@
 <image class="mySlides" src="https://user-images.githubusercontent.com/29642651/28042590-f30fcf84-659b-11e7-817b-da150713c296.PNG">
 <image class="mySlides" src="https://user-images.githubusercontent.com/29642651/28042612-11504f64-659c-11e7-9b57-0a4e735087d5.PNG">
 <image class="mySlides" src="https://user-images.githubusercontent.com/29642651/28042771-b6934b7a-659c-11e7-95f8-ab871ff28890.PNG">
-  <button class="w3-buttonw3-display-left" onlick="plusDivs(-1)>&#10094;</button>
-  <button class="w3-buttonw3-display-right" onlick="plusDivs(-1)>&#10095;</button>                                             
+<button class="w3-buttonw3-display-left" onlick="plusDivs(-1)>&#10094;</button>
+<button class="w3-buttonw3-display-right" onlick="plusDivs(-1)>&#10095;</button>       
+var slideIndex=1;
+showDivs(slideIndex);
+function plusDivs(n){
+  showDivs(slideIndex+=n);
+  }
+function showDivs(n){
+  var i;
+  var x=document.getElementsByClassName("mySlides");
+  if(n>x.length){slideIndex=1};
+  if(m<1){slideIndex=x.length};
+  for (i=0;i<x.length;i++){
+    x[i].style.display="none";
+  }
+  x[slideIndex-1].style.display="block";
+  }
 <h1>Adilene Tejeda</h1>
 <h2>Bio:</h2>
   <body>
