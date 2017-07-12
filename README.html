@@ -108,6 +108,26 @@ img {
   margin-top: 10px;
   display: block;
 }
+#gallery-text-left{
+  /* Added */
+  width: 50%;
+}
+#gallery-paragraph-1{
+  border-left:8px solid #3CB371;
+  border-radius:4px;
+  padding-left:15px;
+  /* Added */
+  word-wrap: break-word;
+}
+#gallery-paragraph-2{
+  border-left:8px solid #3CB371;
+  border-radius:4px;
+  padding-left:15px;
+}
+#gallery-text-right{
+  /* Added */
+  width: 50%;
+}
 </style> 
 <body>
 <div class="topnav" id="myTopnav">
@@ -183,12 +203,14 @@ function showSlides(n) {
     <p>
       Hi. My name is Adilene Tejeda. I am currently 15 years old and live in the Bay Area in the state of California. <br>I believe music is my way of living, for it keeps me sane and keeps my actions centered around reaching my goals.
     </p>
-  </body>
 <h2><center>Likes and Dislikes</center></h2>
-  <body>
-    <p>
-    <h3>Likes:</h3>
-      <ul>
+ <div id="gallery-text">
+
+    <div id="gallery-text-left" style="float:left">
+    <p id="gallery-text-quote-left" style="font-family: 'Shadows Into Light', cursive;"><b><h3>Likes:</h3></b></p>
+
+    <p id="gallery-paragraph-1" style="font-family:Georgia">
+     <ul>
         <li>All genres of music</li>
         <li>The Beach</li>
         <li>The Ocean</li>
@@ -200,8 +222,12 @@ function showSlides(n) {
         <li>Fireflies</li>
         <li>To make people smile</li>
       </ul>
-    <h3>Dislikes:</h3>
-      <ul>
+    </p>
+    </div>
+    <div id="gallery-text-right" style="float:left">
+    <p id="gallery-text-quote-right" style="font-family: 'Shadows Into Light', cursive;"><b><h3>Dislikes:</h3></b></p>
+    <p id="gallery-paragraph-2" style="font-family: 'Shadows Into Light', cursive">
+     <ul>
         <li>Spiders</li>
         <li>Most bugs</li>
         <li>Walking alone when it's dark</li>
@@ -211,6 +237,7 @@ function showSlides(n) {
         <li>When people are disapointed in me</li>
      </ul>
     </p>
+    </div>
   </body>
 <h2>Fun Facts</h2>
   <body>
